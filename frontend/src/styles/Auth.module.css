@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+.body {
+  margin: 3rem 6rem;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Playfair Dislay !important;
+  align-items: center;
+  text-align: center;
+  min-height: 90vh;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.mainBox,
+.spBox {
+  font-family: Playfair Dislay !important;
+  margin: 0 auto;
+  width: 400px;
+  max-width: 400px;
+  min-height: 400px;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.spBox {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.spButton {
+  width: 70%;
+  padding: 0.7rem 0;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: white !important;
+  color: #334155;
+  border: bold !important;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.title {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #334155;
+  text-align: center;
+}
+.homeButton {
+  padding: 0.6rem 0;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: #334155 !important;
+  color: white !important;
+  cursor: pointer;
+}
+.subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #334155;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0.6rem 12px !important;
+}
+.forgotPS {
+  display: flex;
+  justify-content: end;
+}
+.forgotLink {
+  text-decoration: none;
+  color: #333;
+}
+.forgotLink:hover {
+  text-decoration: underline !important;
+}
+.mainButton {
+  padding: 0.6rem 12px;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: #334155 !important;
+  color: white !important;
+  border: none;
+  cursor: pointer;
+}
+
+.socialLogin {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.socialButton {
+  padding: 0.6rem 12px;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  color: #334155 !important;
+  background-color: white !important;
+  cursor: pointer;
+}
+
+.illustration {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+  }
+
+  .mainBox,
+  .spBox {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .socialLogin {
+    flex-direction: column;
+  }
+
+  .socialButton {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .input {
+    font-size: 1rem;
+  }
+
+  .mainButton,
+  .spButton {
+    font-size: 1rem;
+  }
+  .mainBox .spBox {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .socialButton {
+    padding: 0 4rem !important;
+    font-size: 1rem;
+  }
+}
